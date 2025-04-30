@@ -1,0 +1,66 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": []
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"lineWidth": 100
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"nursery": {
+				"useSortedClasses": {
+					"level": "error",
+					"fix": "safe",
+					"options": {
+						"attributes": ["classList"],
+						"functions": ["clsx", "cva", "tw"]
+					}
+				}
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double"
+		}
+	},
+	"overrides": [
+		{
+			"include": ["app/nextjs/**"],
+			"linter": {
+				"enabled": false
+			}
+		},
+		{
+			"include": ["app/nextjs/**/*.tsx"],
+			"linter": {
+				"rules": {
+					"nursery": {
+						"useSortedClasses": {
+							"level": "error",
+							"fix": "safe",
+							"options": {
+								"attributes": ["classList"],
+								"functions": ["clsx", "cva", "tw"]
+							}
+						}
+					}
+				}
+			}
+		}
+	]
+}

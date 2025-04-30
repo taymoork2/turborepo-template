@@ -1,0 +1,13 @@
+{
+	"extends": "@repo/tsconfig/react-library.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"#src/*": ["./src/*"],
+			// This is needed for shadcn cli to work
+			"@repo/design-system/*": ["./src/*"]
+		}
+	},
+	"include": ["."],
+	"exclude": ["node_modules", "dist"]
+}
