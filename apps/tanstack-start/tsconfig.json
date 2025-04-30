@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"moduleResolution": "Bundler",
+		"module": "ESNext",
+		"target": "ES2022",
+		"skipLibCheck": true,
+		"strictNullChecks": true,
+		"noEmit": true,
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": false,
+		"baseUrl": ".",
+		"paths": {
+			"#src/*": ["./src/*"],
+			// This is needed for shadcn cli to work
+			// cn import from "@repo/design-system" needs to be manually corrected
+			"@repo/design-system/*": ["../../packages/design-system/src/*"]
+		}
+	}
+}

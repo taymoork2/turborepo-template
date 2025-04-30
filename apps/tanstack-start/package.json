@@ -1,0 +1,34 @@
+{
+	"name": "tanstack-start",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"imports": {
+		"#src/*": {
+			"types": ["./src/*", "./src/*.ts", "./src/*.tsx"],
+			"default": ["./src/*"]
+		}
+	},
+	"scripts": {
+		"dev": "vinxi dev --port 4000",
+		"build": "vinxi build",
+		"start": "vinxi start"
+	},
+	"dependencies": {
+		"@repo/design-system": "workspace:*",
+		"@tailwindcss/vite": "catalog:",
+		"@tanstack/react-router": "^1.117.1",
+		"@tanstack/react-start": "^1.118.0",
+		"lucide-react": "catalog:",
+		"react": "catalog:react",
+		"react-dom": "catalog:react",
+		"vinxi": "0.5.6"
+	},
+	"devDependencies": {
+		"@repo/tsconfig": "workspace:*",
+		"@types/react": "catalog:react",
+		"@types/react-dom": "catalog:react",
+		"@tailwindcss/vite": "catalog:",
+		"vite-tsconfig-paths": "^5.1.4"
+	}
+}
