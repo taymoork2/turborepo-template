@@ -34,10 +34,12 @@
 	},
 	"devDependencies": {
 		"@repo/tsconfig": "workspace:*",
+		"@storybook/react-vite": "catalog:storybook",
 		"@turbo/gen": "^2.5.2",
 		"@types/node": "catalog:types",
 		"@types/react": "catalog:react",
 		"@types/react-dom": "catalog:react",
+		"storybook": "catalog:storybook",
 		"tailwindcss": "^4.1.4",
 		"typescript": "catalog:typescript"
 	}
