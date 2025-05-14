@@ -26,6 +26,7 @@ catalogs:
   vite:
     vite: ^6.3.4
     '@vitejs/plugin-react-swc': ^3.9.0
+    vite-tsconfig-paths: ^5.1.4
   vitest:
     vitest: ^3.1.2
     '@vitest/coverage-v8': ^3.1.2

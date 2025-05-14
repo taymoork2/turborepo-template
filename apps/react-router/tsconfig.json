@@ -1,0 +1,25 @@
+{
+	"include": ["**/*", "**/.server/**/*", "**/.client/**/*", ".react-router/types/**/*"],
+	"compilerOptions": {
+		"lib": ["DOM", "DOM.Iterable", "ES2022"],
+		"types": ["node", "vite/client"],
+		"target": "ES2022",
+		"module": "ES2022",
+		"moduleResolution": "bundler",
+		"jsx": "react-jsx",
+		"rootDirs": [".", "./.react-router/types"],
+		"baseUrl": ".",
+		"paths": {
+			"#src/*": ["./src/*"],
+			// This is needed for shadcn cli to work
+			// cn import from "@repo/design-system" needs to be manually corrected
+			"@repo/design-system/*": ["../../packages/design-system/src/*"]
+		},
+		"esModuleInterop": true,
+		"verbatimModuleSyntax": true,
+		"noEmit": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true
+	}
+}
